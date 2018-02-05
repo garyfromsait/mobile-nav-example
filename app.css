@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    background: #222;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-menu li {
+    display: inline-block;
+}
+
+ul li a {
+    color: white;
+}
+
+.desktop-menu {
+    display: block;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-container {
+    width: 300px;
+    padding: 20px;
+    background: coral;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s;
+    transform: translateX(-300px);
+}
+
+.mobile-container.open {
+    transform: translateX(0px);
+}
+
+
+@media (max-width: 700px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
