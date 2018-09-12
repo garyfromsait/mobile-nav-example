@@ -10,5 +10,6 @@ function closeMenu() {
     menu.className = 'mobile-container';
 }
 
+
 open.addEventListener('click', openMenu);
 close.addEventListener('click', closeMenu);
